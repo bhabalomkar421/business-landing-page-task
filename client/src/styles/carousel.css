@@ -1,0 +1,55 @@
+.carousel-div{
+    margin: 1em;
+}
+
+.carousel-img1{
+    width: 10em;
+    height: 30em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel-div{
+        margin: 1em 2em 1em 2em;
+    }
+    .carousel-img{
+        border-radius: 10px;
+    }
+    .carousel-tag{
+        font-size: medium;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .carousel-div{
+        margin: 1em 2em 1em 2em;
+    }
+    .carousel-img{
+        border-radius: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carousel-div{
+        margin: 1em 2em 1em 2em;
+    }
+    .carousel-img{
+        border-radius: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carousel-div{
+        margin: 1em 4em 1em 4em;
+    }
+    .carousel-img{
+        width: 10em;
+        height: 30em;
+        border-radius: 20px;
+    }
+}
+
+

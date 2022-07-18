@@ -1,0 +1,55 @@
+.whychooseus{
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 2em;
+}
+
+.title1{
+    text-align: center;
+}
+
+.sub-title1{
+    text-align: center;
+    color: grey;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.features{
+    display: flex;
+}
+
+.feature-title{
+    text-align: center;
+    width: inherit;
+}
+
+.feature-subtitle{
+    color: grey;
+    text-align: center;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .icons{
+        width: 4em;
+        height: 4em;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .money{
+        margin-left: 200px;
+    }
+}
