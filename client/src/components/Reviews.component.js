@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-elastic-carousel';
 import { Button } from 'react-bootstrap';
-import axios from 'axios';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/customer.jpg';
 import "../styles/reviews.css";
 import store from '../store';
@@ -58,9 +58,11 @@ class Reviews extends React.Component{
                     } 
                 </Carousel>
                 <div className='explore-btn'>
-                  <Button variant="primary" size="lg">
-                      Explore our offerings
-                  </Button>
+                    <Link to="/pricing">
+                        <Button className="explore-button" variant="primary" size="lg">
+                            Explore our offerings
+                        </Button>
+                    </Link>
                 </div>
             </div>
         )

@@ -6,6 +6,7 @@ import slide1 from "../assets/slide-1.jpg";
 import slide2 from "../assets/slide-2.jpg";
 import slide3 from "../assets/slide-3.jpg";
 import "../styles/carousel.css";
+import { Link } from "react-router-dom";
 
 function CarouselFadeExample() {
   return (
@@ -19,9 +20,11 @@ function CarouselFadeExample() {
             />
             <Carousel.Caption>
                 <h4 className="carousel-tag">Drive in with the car and leave with a clean car in less than 10 minutes</h4>
-                <Button className="explore-button" variant="primary">
-                    Explore our offerings
-                </Button>
+                <Link to="/pricing">
+                    <Button className="explore-button" variant="primary">
+                        Explore our offerings
+                    </Button>
+                </Link>
             </Carousel.Caption>
             
         </Carousel.Item>
@@ -34,9 +37,11 @@ function CarouselFadeExample() {
 
             <Carousel.Caption>
                 <h4 className="carousel-tag">Drive in with the car and leave with a clean car in less than 10 minutes</h4>
-                <Button className="explore-button" variant="primary">
-                    Explore our offerings
-                </Button>
+                <Link to="/pricing">
+                    <Button className="explore-button" variant="primary">
+                        Explore our offerings
+                    </Button>
+                </Link>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -48,9 +53,11 @@ function CarouselFadeExample() {
 
             <Carousel.Caption>
                 <h4 className="carousel-tag">Drive in with the car and leave with a clean car in less than 10 minutes</h4>
-                <Button className="explore-button" variant="primary">
-                    Explore our offerings
-                </Button>
+                <Link to="/pricing">
+                    <Button className="explore-button" variant="primary">
+                        Explore our offerings
+                    </Button>
+                </Link>
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>
