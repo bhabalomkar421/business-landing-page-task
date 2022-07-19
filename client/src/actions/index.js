@@ -1,0 +1,1 @@
+export const fetchReviews = (review) => {return { type: "FETCH_REVIEWS", review}}

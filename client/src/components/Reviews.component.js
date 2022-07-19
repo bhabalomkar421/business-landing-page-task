@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import Logo from '../assets/customer.jpg';
 import "../styles/reviews.css";
+import store from '../store';
 
 const ReviewCard = (props) => (
     <div className = "review-card">
@@ -37,14 +38,11 @@ class Reviews extends React.Component{
         ]
     }
     componentDidMount(){
-      axios.get('reviews/')
-      .then(res => {
-        console.log(res.data.reviews);
-        if(res){
-          this.setState({ reviews : res.data.reviews });
-        }
-      })
-      .catch(e => console.log(e));
+        store.subscribe(() => {
+            this.setState({
+                reviews: store.getState().fetchReviews
+            })
+        })
     }
     render(){
         return (
@@ -52,7 +50,8 @@ class Reviews extends React.Component{
                 <h2>What our clients says</h2>
                 <Carousel breakPoints={this.breakPoints}>
                     {
-                      this.state.reviews && 
+                        
+                      this.state.reviews  && 
                       this.state.reviews.map(review => (
                         <ReviewCard username={review.username} userDestination={review.userDestination} userReview = {review.userReview} />
                       ))
