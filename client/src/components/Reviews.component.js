@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-elastic-carousel';
 import { Button } from 'react-bootstrap';
+import axios from 'axios';
 import Logo from '../assets/customer.jpg';
 import "../styles/reviews.css";
 
@@ -24,33 +25,7 @@ class Reviews extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          reviews : [
-            {
-              username : "John",
-              userDestination: "Manager",
-              userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
-            },
-            {
-              username : "John",
-              userDestination: "Manager",
-              userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
-            },
-            {
-              username : "John",
-              userDestination: "Manager",
-              userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
-            },
-            {
-              username : "John",
-              userDestination: "Manager",
-              userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
-            },
-            {
-              username : "John",
-              userDestination: "Manager",
-              userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
-            }
-          ]
+          reviews : []
         };
         this.breakPoints = [
           { width: 1, itemsToShow: 1 },
@@ -60,6 +35,16 @@ class Reviews extends React.Component{
           { width: 1450, itemsToShow: 5 },
           { width: 1750, itemsToShow: 6 },
         ]
+    }
+    componentDidMount(){
+      axios.get('reviews/')
+      .then(res => {
+        console.log(res.data.reviews);
+        if(res){
+          this.setState({ reviews : res.data.reviews });
+        }
+      })
+      .catch(e => console.log(e));
     }
     render(){
         return (

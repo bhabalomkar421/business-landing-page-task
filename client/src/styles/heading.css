@@ -12,3 +12,11 @@
     color: grey;
     font-size: 1.5em;
 }
+
+.underline{
+    border-bottom: 5px solid #ffbd00;
+    margin: 0 37.5%;
+    width: 25%;
+    transform: translateY(-18px);
+    opacity: 0.5;
+}

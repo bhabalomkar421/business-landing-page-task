@@ -13,6 +13,7 @@ const Heading = () => (
       </div>
       <div className="title">
         <h2>Drive and Shine</h2>
+        <p className="underline"></p>
         <p className="subtitle">Car wash</p>
       </div>
     </div>

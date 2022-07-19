@@ -12,44 +12,50 @@
 .sub-title1{
     text-align: center;
     color: grey;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 1.5em;
+}
+
+.whychooseTitle{
+    margin-bottom: 40px;
 }
 
 .features{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .feature-title{
-    text-align: center;
+    text-align: left;
     width: inherit;
+    font-size: large !important;
 }
 
 .feature-subtitle{
     color: grey;
-    text-align: center;
+    text-align: left;
 }
 
 .explore{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
+.icons{
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 10px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .icons{
-        width: 4em;
-        height: 4em;
-    }
+    
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .money{
-        margin-left: 200px;
-    }
+
 }

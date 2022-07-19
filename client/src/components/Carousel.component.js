@@ -14,12 +14,12 @@ function CarouselFadeExample() {
         <Carousel.Item>
             <img
             className="carousel-img d-block w-100"
-            src={slide1}
+            src={slide2}
             alt="First slide"
             />
             <Carousel.Caption>
                 <h4 className="carousel-tag">Drive in with the car and leave with a clean car in less than 10 minutes</h4>
-                <Button variant="primary">
+                <Button className="explore-button" variant="primary">
                     Explore our offerings
                 </Button>
             </Carousel.Caption>
@@ -28,13 +28,13 @@ function CarouselFadeExample() {
         <Carousel.Item>
             <img
             className="carousel-img d-block w-100"
-            src={slide2}
+            src={slide1}
             alt="Second slide"
             />
 
             <Carousel.Caption>
                 <h4 className="carousel-tag">Drive in with the car and leave with a clean car in less than 10 minutes</h4>
-                <Button variant="primary">
+                <Button className="explore-button" variant="primary">
                     Explore our offerings
                 </Button>
             </Carousel.Caption>
@@ -48,7 +48,7 @@ function CarouselFadeExample() {
 
             <Carousel.Caption>
                 <h4 className="carousel-tag">Drive in with the car and leave with a clean car in less than 10 minutes</h4>
-                <Button variant="primary">
+                <Button className="explore-button" variant="primary">
                     Explore our offerings
                 </Button>
             </Carousel.Caption>
