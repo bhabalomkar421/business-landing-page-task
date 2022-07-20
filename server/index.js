@@ -17,27 +17,27 @@ app.get('/reviews', (req, res) => {
     {
       username : "John",
       userDestination: "Manager",
-      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
+      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
     },
     {
       username : "Michael",
       userDestination: "Director",
-      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
+      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
     },
     {
       username : "Rachael",
       userDestination: "Executive",
-      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
+      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
     },
     {
       username : "Ajay",
       userDestination: "Software Developer",
-      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
+      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
     },
     {
       username : "Jay",
       userDestination: "Software Architect",
-      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen"
+      userReview : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
     }
   ]
   return res.json({reviews : reviews});

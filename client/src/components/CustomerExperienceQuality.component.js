@@ -13,7 +13,7 @@ const workerText = "Quality Assurance";
 
 const YearsCard = (props) => (
   <div className = "years-card"> 
-      <img src={customer} alt="icon"></img>
+      <img className = "year-card-icon" src={customer} alt="icon"></img>
       <div className = "year-card-number">
           <p className="year-number">{props.number}</p>
       </div>     

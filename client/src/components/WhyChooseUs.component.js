@@ -1,4 +1,5 @@
 import Button from 'react-bootstrap/Button'
+import {Link} from 'react-router-dom'; 
 import "../styles/whychooseus.css";
 import customer from "../assets/customer.jpg";
 import money from "../assets/money.jpg";
@@ -32,9 +33,11 @@ const WhyChooseUs = () => (
             </div>
         </div>
         <div className="explore">
-            <Button variant="primary" size="lg">
-                Explore our offerings
-            </Button>
+            <Link to="/pricing">
+                <Button variant="primary" size="lg">
+                    Explore our offerings
+                </Button>
+            </Link>
         </div>
     </div>
 );

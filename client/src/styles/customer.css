@@ -1,5 +1,5 @@
 .years-clients-quality-background{
-    width: 70%;
+    /* width: 70%; */
     margin-left: 15%;
     margin-right: 15%;
     background-color: #0d73f5;
@@ -10,7 +10,7 @@
 }
 
 .years-card{
-    margin-left: 35%;
+    margin-left: 25%;
     margin-right: 25%;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -19,4 +19,14 @@
 .year-card-number{
     font-size: larger;
     font-weight: bolder;
+    text-align: center;
+}
+
+.year-card-text{
+    text-align: center;
+}
+
+.year-card-icon{
+    margin-left: 25%;
+    margin-right: 25%;
 }

@@ -57,9 +57,9 @@ class Reviews extends React.Component{
                       ))
                     } 
                 </Carousel>
-                <div className='explore-btn'>
+                <div className='explore reviews-explore-button-div'>
                     <Link to="/pricing">
-                        <Button className="explore-button" variant="primary" size="lg">
+                        <Button variant="primary" size="lg">
                             Explore our offerings
                         </Button>
                     </Link>

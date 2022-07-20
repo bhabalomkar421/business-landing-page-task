@@ -13,7 +13,7 @@ const Pricing = () => (
                     <div className="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                         <div className="inner-box">
                             <div className="icon-box">
-                                <div className="icon-outer"><i className="fas fa-paper-plane"></i></div>
+                                <div className="icon-outer"><img src="https://images.squarespace-cdn.com/content/v1/55a431a3e4b0750a4c15872d/1543547430188-E9KCKAOTVBKJMJZY05LC/daypass.jpeg?format=1000w" className="fas fa-paper-plane"></img></div>
                             </div>
                             <div className="price-box">
                                 <div className="title"> Day Pass</div>
@@ -21,7 +21,7 @@ const Pricing = () => (
                             </div>
                     
                             <div className="btn-box">
-                                <a href="" className="theme-btn">BUY plan</a>
+                                <a href="" className="theme-btn">Buy plan</a>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const Pricing = () => (
                     <div className="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                         <div className="inner-box">
                             <div className="icon-box">
-                                <div className="icon-outer"><i className="fas fa-gem"></i></div>
+                                <div className="icon-outer"><img src="https://icon-library.com/images/profile-icon-white/profile-icon-white-5.jpg" className="fas fa-gem"></img></div>
                             </div>
                             <div className="price-box">
                                 <div className="title">Full Pass</div>
@@ -38,7 +38,7 @@ const Pricing = () => (
                             </div>
                             
                             <div className="btn-box">
-                                <a href="" className="theme-btn">BUY plan</a>
+                                <a href="" className="theme-btn">Buy plan</a>
                             </div>
                         </div>
                     </div>
@@ -47,14 +47,14 @@ const Pricing = () => (
                     <div className="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                         <div className="inner-box">
                             <div className="icon-box">
-                                <div className="icon-outer"><i className="fas fa-rocket"></i></div>
+                                <div className="icon-outer"><img src="https://www.pngkit.com/png/full/131-1318731_group-of-people-in-a-formation-free-icon.png" className="fas fa-rocket"></img></div>
                             </div>
                             <div className="price-box">
                                 <div className="title">Group Pass</div>
                                 <h4 className="price">$199.99</h4>
                             </div>
                             <div className="btn-box">
-                                <a href="" className="theme-btn">BUY plan</a>
+                                <a href="" className="theme-btn">Buy plan</a>
                             </div>
                         </div>
                     </div>
