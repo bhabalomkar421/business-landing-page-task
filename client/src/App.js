@@ -14,7 +14,7 @@ function App() {
   const [review, setReviews] = useState([])
   useEffect(() => {
     // making the request from the server
-    axios.get('reviews/')
+    axios.get('https://business-landing-page.herokuapp.com/reviews/')
       .then(res => {
           setReviews(res.data.reviews);
           dispatch(fetchReviews(res.data.reviews));
