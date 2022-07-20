@@ -47,7 +47,7 @@ class Reviews extends React.Component{
     render(){
         return (
             <div className="reviews">
-                <h2>What our clients says</h2>
+                <h2  className="title1">What our clients says</h2>
                 <Carousel breakPoints={this.breakPoints}>
                     {
                         
