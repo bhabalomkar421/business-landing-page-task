@@ -53,7 +53,7 @@ class Reviews extends React.Component{
                         
                       this.state.reviews  && 
                       this.state.reviews.map(review => (
-                        <ReviewCard username={review.username} userDestination={review.userDestination} userReview = {review.userReview} />
+                        <ReviewCard key={review.username} username={review.username} userDestination={review.userDestination} userReview = {review.userReview} />
                       ))
                     } 
                 </Carousel>
